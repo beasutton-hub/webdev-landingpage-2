@@ -5,91 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trusted Home Contractor</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@tailwindcss/forms"></script>
 </head>
 <body class="font-sans text-gray-800">
 
   <!-- Hero Section -->
   <section class="relative bg-gray-900 text-white">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
-         alt="Modern house" 
-         class="absolute inset-0 w-full h-full object-cover opacity-60">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
+         alt="Modern home exterior"
+         class="absolute inset-0 w-full h-full object-cover opacity-70">
     <div class="relative container mx-auto px-6 py-32 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Building Homes, Building Trust</h1>
-      <p class="text-lg md:text-xl mb-6">Quality contracting services for your next project.</p>
-      <a href="#contact" 
-         class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-6 py-3 rounded-lg">
-        Book a Call
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-in">
+        Building Dreams, One Home at a Time
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+        Reliable, modern, and affordable contracting services for homeowners who want the best.
+      </p>
+      <a href="#contact"
+         class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
+        Request a Call
       </a>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="container mx-auto px-6 py-16 text-center">
-    <h2 class="text-3xl font-bold mb-12">Our Services</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1600585154363-6f9037a37b9d?auto=format&fit=crop&w=800&q=80"
-             class="rounded mb-4" alt="Kitchen remodel">
-        <h3 class="font-semibold text-xl mb-2">Remodeling</h3>
-        <p>From kitchens to bathrooms, we bring fresh designs to your home.</p>
+  <section class="container mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-14">Our Expertise</h2>
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="https://images.unsplash.com/photo-1600585154200-1f28efc0d84b?auto=format&fit=crop&w=900&q=80"
+             alt="Remodeling kitchen"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">Remodeling</h3>
+          <p>Transform your spaces with stylish, functional, and modern updates.</p>
+        </div>
       </div>
-      <div class="p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
-             class="rounded mb-4" alt="House construction">
-        <h3 class="font-semibold text-xl mb-2">New Construction</h3>
-        <p>Custom builds with quality materials and craftsmanship you can trust.</p>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+             alt="New construction"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">New Construction</h3>
+          <p>From blueprint to reality, we build with precision and care.</p>
+        </div>
       </div>
-      <div class="p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1597007723521-c7c2cb4c53b1?auto=format&fit=crop&w=800&q=80"
-             class="rounded mb-4" alt="Roof repair">
-        <h3 class="font-semibold text-xl mb-2">Repairs</h3>
-        <p>Dependable repair services to keep your home in top shape.</p>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="https://images.unsplash.com/photo-1599427303058-f04d44d1d8d2?auto=format&fit=crop&w=900&q=80"
+             alt="Roof repair service"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">Repairs</h3>
+          <p>Fast, reliable fixes that keep your home strong and secure.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="bg-gray-100 py-16">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
-      <p class="max-w-2xl mx-auto">
-        With years of experience in residential construction, our team provides reliable, high-quality work that puts your satisfaction first. We treat every home like it’s our own.
-      </p>
+  <section class="bg-gradient-to-r from-yellow-50 to-yellow-100 py-20">
+    <div class="container mx-auto px-6 md:flex items-center gap-12">
+      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1000&q=80"
+           alt="Team of contractors"
+           class="rounded-xl shadow-lg md:w-1/2 mb-8 md:mb-0">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-6">Why Homeowners Choose Us</h2>
+        <p class="mb-4">
+          We bring decades of combined experience, the latest tools, and a dedication to perfection.
+        </p>
+        <p class="mb-6">
+          Every project is personal: our goal is to deliver homes that are safe, stylish, and built to last.
+        </p>
+        <a href="#contact"
+           class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800">
+          Get Started
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Contact Form -->
-  <section id="contact" class="container mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold text-center mb-8">Request a Call</h2>
-    <form class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-4">
+  <section id="contact" class="container mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-center mb-10">Book a Free Consultation</h2>
+    <form class="max-w-2xl mx-auto bg-white p-10 rounded-2xl shadow-xl space-y-6">
       <div>
-        <label class="block text-left font-semibold">Name</label>
-        <input type="text" class="w-full border rounded p-2" placeholder="Your full name" required />
+        <label class="block text-left font-semibold mb-1">Name</label>
+        <input type="text" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="Your full name" required>
       </div>
       <div>
-        <label class="block text-left font-semibold">Email</label>
-        <input type="email" class="w-full border rounded p-2" placeholder="you@example.com" required />
+        <label class="block text-left font-semibold mb-1">Email</label>
+        <input type="email" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="you@example.com" required>
       </div>
       <div>
-        <label class="block text-left font-semibold">Phone</label>
-        <input type="tel" class="w-full border rounded p-2" placeholder="(123) 456-7890" />
+        <label class="block text-left font-semibold mb-1">Phone</label>
+        <input type="tel" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="(123) 456-7890">
       </div>
       <div>
-        <label class="block text-left font-semibold">Project Details</label>
-        <textarea class="w-full border rounded p-2" rows="4" placeholder="Tell us about your project"></textarea>
+        <label class="block text-left font-semibold mb-1">Project Details</label>
+        <textarea rows="4" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="Tell us about your project"></textarea>
       </div>
-      <button type="submit" 
-              class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg">
+      <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 rounded-lg shadow-lg transition transform hover:scale-105">
         Submit Request
       </button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
-    <p>&copy; 2025 Trusted Contractor. All rights reserved.</p>
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <p class="mb-2">&copy; 2025 Trusted Contractor. All rights reserved.</p>
+    <p>Made with passion for homeowners like you.</p>
   </footer>
 
+  <!-- Small Animation -->
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fade-in 1.2s ease-out; }
+  </style>
 </body>
 </html>
 
