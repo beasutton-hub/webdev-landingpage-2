@@ -1,139 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trusted Home Contractor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Landing Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans bg-gray-50 text-gray-800">
 
   <!-- Hero Section -->
-  <section class="relative bg-gray-900 text-white">
-    <!-- Background image -->
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
-         alt="Modern home exterior"
-         class="absolute inset-0 w-full h-full object-cover">
-    <!-- Dark overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-
-    <div class="relative container mx-auto px-6 py-32 text-center">
-      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-in">
-        Building Dreams, One Home at a Time
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-        Reliable, modern, and affordable contracting services for homeowners who want the best.
-      </p>
-      <a href="#contact"
-         class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105">
-        Request a Call
-      </a>
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Building Dreams, One Home at a Time</h1>
+      <p class="text-lg md:text-2xl text-gray-200 mb-8">Reliable, modern, and affordable contracting services for homeowners who want the best.</p>
+      <a href="#contact" class="bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-yellow-400 transition">Request a Call</a>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="bg-gradient-to-b from-gray-50 to-gray-100 py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-14">Our Expertise</h2>
-      <div class="grid md:grid-cols-3 gap-12">
-        <!-- Remodeling -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80"
-               alt="Remodeling kitchen"
-               class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3">Remodeling</h3>
-            <p>Transform your spaces with stylish, functional, and modern updates.</p>
-          </div>
+  <section class="container mx-auto px-6 py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+    <h2 class="text-3xl font-bold mb-12 text-center">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Remodeling -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="https://images.unsplash.com/photo-1600585154363-6f9037a37b9d?auto=format&fit=crop&w=900&q=80"
+             alt="Kitchen remodel" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">Remodeling</h3>
+          <p>From kitchens to bathrooms, we bring fresh designs to your home.</p>
         </div>
-        <!-- New Construction -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
-               alt="New construction"
-               class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3">New Construction</h3>
-            <p>From blueprint to reality, we build with precision and care.</p>
-          </div>
+      </div>
+      <!-- New Construction -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+             alt="House construction" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">New Construction</h3>
+          <p>Custom builds with quality materials and craftsmanship you can trust.</p>
         </div>
-        <!-- Repairs -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-          <img src="https://images.unsplash.com/photo-1581092918380-1e7e00c4f4ab?auto=format&fit=crop&w=900&q=80"
+      </div>
+      <!-- Repairs -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <picture>
+          <img src="https://images.pexels.com/photos/6474470/pexels-photo-6474470.jpeg?auto=compress&cs=tinysrgb&w=900"
                alt="Roof repair service"
-               class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3">Repairs</h3>
-            <p>Fast, reliable fixes that keep your home strong and secure.</p>
-          </div>
+               class="w-full h-56 object-cover"
+               onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'flex items-center justify-center h-56 bg-gray-200\'><svg xmlns=\'http://www.w3.org/2000/svg\' class=\'h-16 w-16 text-gray-500\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M3 7l9-4 9 4-9 4-9-4zm0 6l9-4 9 4-9 4-9-4z\' /></svg></div>')">
+        </picture>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3">Repairs</h3>
+          <p>Fast, reliable fixes that keep your home strong and secure.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="bg-gradient-to-r from-yellow-50 to-yellow-100 py-20">
-    <div class="container mx-auto px-6 md:flex items-center gap-12">
-      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1000&q=80"
-           alt="Team of contractors"
-           class="rounded-xl shadow-lg md:w-1/2 mb-8 md:mb-0">
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-4xl font-bold mb-6">Why Homeowners Choose Us</h2>
-        <p class="mb-4">
-          We bring decades of combined experience, the latest tools, and a dedication to perfection.
-        </p>
-        <p class="mb-6">
-          Every project is personal: our goal is to deliver homes that are safe, stylish, and built to last.
-        </p>
-        <a href="#contact"
-           class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800">
-          Get Started
-        </a>
+  <section class="bg-white py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1581091870622-4c4e0c7f0c4b?auto=format&fit=crop&w=1200&q=80"
+           alt="Contractor team at work" class="rounded-xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Why Choose Us?</h2>
+        <p class="mb-4">With years of hands-on experience, our skilled team delivers top-notch results. We focus on clear communication, fair pricing, and exceeding your expectations every time.</p>
+        <ul class="list-disc list-inside text-lg space-y-2">
+          <li>Licensed & Insured Professionals</li>
+          <li>Transparent Estimates</li>
+          <li>Customer-First Approach</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Contact Form -->
-  <section id="contact" class="bg-gradient-to-b from-gray-100 to-gray-200 py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-10">Book a Free Consultation</h2>
-      <form class="max-w-2xl mx-auto bg-white p-10 rounded-2xl shadow-xl space-y-6">
-        <div>
-          <label class="block text-left font-semibold mb-1">Name</label>
-          <input type="text" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="Your full name" required>
-        </div>
-        <div>
-          <label class="block text-left font-semibold mb-1">Email</label>
-          <input type="email" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="you@example.com" required>
-        </div>
-        <div>
-          <label class="block text-left font-semibold mb-1">Phone</label>
-          <input type="tel" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="(123) 456-7890">
-        </div>
-        <div>
-          <label class="block text-left font-semibold mb-1">Project Details</label>
-          <textarea rows="4" class="w-full border-gray-300 rounded-lg p-3 focus:ring-yellow-500 focus:border-yellow-500" placeholder="Tell us about your project"></textarea>
-        </div>
-        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 rounded-lg shadow-lg transition transform hover:scale-105">
-          Submit Request
-        </button>
+  <!-- Contact -->
+  <section id="contact" class="bg-yellow-500 py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-black">Book a Free Consultation</h2>
+      <p class="mb-8 text-black">Leave your details and our team will call you back to discuss your project.</p>
+      <form class="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border p-3 rounded" required>
+        <input type="email" placeholder="Your Email" class="w-full border p-3 rounded" required>
+        <input type="tel" placeholder="Your Phone" class="w-full border p-3 rounded" required>
+        <textarea placeholder="Tell us about your project..." class="w-full border p-3 rounded" rows="4"></textarea>
+        <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-400 transition">Submit</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
-    <p class="mb-2">&copy; 2025 Trusted Contractor. All rights reserved.</p>
-    <p>Made with passion for homeowners like you.</p>
+  <footer class="bg-gray-800 text-gray-300 py-8 text-center">
+    <p>&copy; 2025 Contractor Co. All rights reserved.</p>
   </footer>
 
-  <!-- Animations -->
-  <style>
-    @keyframes fade-in {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fade-in { animation: fade-in 1.2s ease-out; }
-  </style>
 </body>
 </html>
 
